@@ -1,4 +1,4 @@
-package com.ta.framework.data.supplier;
+package com.ta.framework.data.suppliers;
 
 import java.util.List;
 

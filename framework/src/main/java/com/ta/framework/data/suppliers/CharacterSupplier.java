@@ -1,22 +1,23 @@
-package com.ta.framework.data.supplier;
+package com.ta.framework.data.suppliers;
 
 import java.util.List;
 
 import com.ta.framework.data.DataType;
 import com.ta.framework.data.supplier.techniques.SupplyTechnique;
+
 /**
  * 
  * @author gentjan koliçaj
  *
  */
-public class FloatSupplier extends Supplier {
+public class CharacterSupplier extends Supplier {
 
-	public FloatSupplier() {
+	public CharacterSupplier() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public FloatSupplier(DataType dataType) {
+	public CharacterSupplier(DataType dataType) {
 		super(dataType);
 		// TODO Auto-generated constructor stub
 	}
@@ -26,7 +27,7 @@ public class FloatSupplier extends Supplier {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
 
-    
+	
+   
 }

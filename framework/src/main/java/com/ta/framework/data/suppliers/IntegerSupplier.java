@@ -1,4 +1,4 @@
-package com.ta.framework.data.supplier;
+package com.ta.framework.data.suppliers;
 
 import java.util.List;
 
@@ -10,14 +10,14 @@ import com.ta.framework.data.supplier.techniques.SupplyTechnique;
  * @author gentjan koliçaj
  *
  */
-public class CharacterSupplier extends Supplier {
+public class IntegerSupplier extends Supplier {
 
-	public CharacterSupplier() {
+	public IntegerSupplier() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public CharacterSupplier(DataType dataType) {
+	public IntegerSupplier(DataType dataType) {
 		super(dataType);
 		// TODO Auto-generated constructor stub
 	}
@@ -28,6 +28,6 @@ public class CharacterSupplier extends Supplier {
 		return null;
 	}
 
-	
    
+
 }
