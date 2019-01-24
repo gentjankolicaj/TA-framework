@@ -2,4 +2,4 @@
  * @author gentjan kolicaj
  *
  */
-package com.ta.framework.main;
+package com.ta.framework;
