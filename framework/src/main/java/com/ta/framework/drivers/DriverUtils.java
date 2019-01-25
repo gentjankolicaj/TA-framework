@@ -75,7 +75,7 @@ public class DriverUtils {
 
 	public static String findDriverPath(DriverType driverType) {
 		String path = "";
-		path = GlobalConfigs.driversDirectoryName + GlobalConfigs.fileSeparator + driverType.getDriverExe();
+		path = GlobalConfigs.homeDirectory+ GlobalConfigs.fileSeparator+GlobalConfigs.driversDirectoryName + GlobalConfigs.fileSeparator + driverType.getDriverExe();
 		return path;
 	}
 
