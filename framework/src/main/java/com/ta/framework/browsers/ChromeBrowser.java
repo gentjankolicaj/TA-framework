@@ -18,6 +18,12 @@ public class ChromeBrowser extends Browser {
 		super(webDriver, browserType, timeout);
 		
 	}
+
+	@Override
+	public String toString() {
+		return "ChromeBrowser [webDriver=" + webDriver + ", browserType=" + browserType + ", timeout=" + timeout + "]";
+	}
+	
 	
    
 }

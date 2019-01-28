@@ -19,5 +19,11 @@ public class OperaBrowser extends Browser {
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public String toString() {
+		return "OperaBrowser [webDriver=" + webDriver + ", browserType=" + browserType + ", timeout=" + timeout + "]";
+	}
+
+	
 
 }

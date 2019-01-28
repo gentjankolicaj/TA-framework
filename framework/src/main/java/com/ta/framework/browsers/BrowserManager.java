@@ -91,28 +91,28 @@ public class BrowserManager {
 
 	}
 
-	public static void close(List<Browser> list) {
+	public static void closeBrowsers(List<Browser> list) {
 		for (Browser var : list)
 			var.webDriver.close();
 	}
 
-	public static void close(Browser[] array) {
+	public static void closeBrowsers(Browser[] array) {
 		for (Browser var : array)
 			var.webDriver.close();
 	}
 
-	public static void quit(List<Browser> list) {
+	public static void quitBrowsers(List<Browser> list) {
 		for (Browser var : list)
 			var.webDriver.quit();
 	}
 
-	public static void quit(Browser[] array) {
+	public static void quitBrowsers(Browser[] array) {
 		for (Browser var : array)
 			var.webDriver.quit();
 
 	}
 
-	public static void quitAll() {
+	public static void quitAllBrowsers() {
 		Map<Integer, Browser> map = BrowserMap.getBrowserReferences();
 		for (Map.Entry<Integer, Browser> entry : map.entrySet()) {
 			entry.getValue().webDriver.quit();
@@ -121,7 +121,7 @@ public class BrowserManager {
 
 	}
 
-	public static void closeAll() {
+	public static void closeAllBrowsers() {
 		Map<Integer, Browser> map = BrowserMap.getBrowserReferences();
 		for (Map.Entry<Integer, Browser> entry : map.entrySet()) {
 			entry.getValue().webDriver.close();

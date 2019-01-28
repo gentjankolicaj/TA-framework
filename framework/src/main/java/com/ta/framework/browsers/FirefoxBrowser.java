@@ -19,5 +19,12 @@ public class FirefoxBrowser extends  Browser{
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public String toString() {
+		return "FirefoxBrowser [webDriver=" + webDriver + ", browserType=" + browserType + ", timeout=" + timeout + "]";
+	}
+	
+	
+
 
 }
