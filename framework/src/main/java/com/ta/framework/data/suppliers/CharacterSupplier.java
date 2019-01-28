@@ -1,33 +1,36 @@
 package com.ta.framework.data.suppliers;
 
-import java.util.List;
 
-import com.ta.framework.data.DataType;
-import com.ta.framework.data.supplier.techniques.SupplyTechnique;
+import com.ta.framework.data.DataSet;
+import com.ta.framework.data.supplier.techniques.DataOrigin;
 
 /**
  * 
- * @author gentjan koliçaj
+ * @author gentjan kolicaj
  *
  */
 public class CharacterSupplier extends Supplier {
-
-	public CharacterSupplier() {
+	
+	private static CharacterSupplier instance=new CharacterSupplier();
+	
+	private CharacterSupplier() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
-	public CharacterSupplier(DataType dataType) {
-		super(dataType);
-		// TODO Auto-generated constructor stub
+	
+	public static CharacterSupplier getInstance() {
+		if(instance==null) {
+			instance=new CharacterSupplier();
+			return instance;
+		}else
+			return instance;
 	}
 
 	@Override
-	public List<Object> supply(SupplyTechnique supplyTechnique) throws Exception {
+	public DataSet supplyDataSet(DataOrigin dataOrigin) throws Exception {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	
-   
+
 }
