@@ -6,8 +6,8 @@ package com.ta.framework.result;
  */
 public abstract class MyResult<K,V> {
 	
-	private K key;
-	private V value;
+	protected K key;
+	protected V value;
 	
 	public MyResult() {
 		super();
@@ -35,9 +35,5 @@ public abstract class MyResult<K,V> {
 	public void setValue(V value) {
 		this.value = value;
 	}
-	
-	
-	
-	
 
 }

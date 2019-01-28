@@ -7,11 +7,16 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.Dimension;
 
 import com.ta.framework.browsers.MyBrowserType;
+import com.ta.framework.log.MyLogType;
 
 public class GlobalConfigs {
 	
 	public static final String homeDirectory=System.getProperty("user.home");
 	public static final String fileSeparator=System.getProperty("file.separator");
+	
+	public static final MyLogType LOGGER=MyLogType.CONSOLE_LOGGER;
+	public static boolean showLogs=true;
+	public static boolean storeLogs=true;
 	
 	public static final String driversDirectoryName="web-drivers";
 	public static final String reportDirectoryName="test-reports";

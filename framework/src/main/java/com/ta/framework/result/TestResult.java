@@ -19,6 +19,9 @@ public class TestResult extends MyResult<String,List<String>> {
 		// TODO Auto-generated constructor stub
 	}
 
-	
+	@Override
+	public String toString() {
+		return "TestResult [key=" + key + ", value=" + value + "]";
+	}	
 
 }
