@@ -6,7 +6,11 @@ import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
-
+/**
+ * 
+ * @author gentjan kolicaj
+ *
+ */
 public class BrowserManagerTest {
 
 	@Before
@@ -25,7 +29,7 @@ public class BrowserManagerTest {
 		List<Browser> browsers=BrowserManager.openBrowsers(MyBrowserType.CHROME,MyBrowserType.FIREFOX,MyBrowserType.EDGE);
 		assertNotNull(browsers);
 		
-		BrowserManager.quitAll();
+		BrowserManager.quitAllBrowsers();
 	}
 
 	@Test
