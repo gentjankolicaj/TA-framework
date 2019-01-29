@@ -1,14 +1,17 @@
 package com.ta.framework.framework.interfaces;
+
+import java.util.List;
+
 /**
  * 
  * @author gentjan kolicaj
  *
  */
-public interface PageContext {
+public interface PageContext<I,O> {
 
-    public abstract void preConstruct() throws Exception;
+    public abstract List<O> preConstruct(I... inputs) throws Exception;
 
-    public abstract void postConstruct() throws Exception;
+    public abstract List<O> postConstruct(I... inputs) throws Exception;
 
 
 }
