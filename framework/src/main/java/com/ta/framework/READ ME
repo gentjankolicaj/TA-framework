@@ -1,0 +1,15 @@
+Application : https://stackoverflow.com/
+
+-In WebApplication package we put TCs and classes specific to application.
+-We use page object modeling(POM) and each page class extends AbstractWebPage
+
+======================================================================================================================================
+=============================================== To be done by you ====================================================================
+======================================================================================================================================
+-In order for the framework to have automatic testing with "DECISION TABLES or BOUNDARY VALUES,or EQUIVALENCE PARTITIONING" ,you must finish implementing functionality :
+  1.In data.suppliers package
+  2.In data package
+  3.In data.test package
+  4.In test.technique package
+  
+  :) Good luck
