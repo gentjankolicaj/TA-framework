@@ -22,7 +22,7 @@ public class GlobalConfigs {
 	public static final MyLogType LOGGER=MyLogType.CONSOLE_LOGGER;
 	public static boolean showLogs=true;
 	public static boolean storeLogs=true;
-	public static ReportFileType logFileType=ReportFileType.XLS; 
+	public static ReportFileType logFileType=ReportFileType.XLS;
 	
 	
 	public static final String reportDirectoryName="test-reports";

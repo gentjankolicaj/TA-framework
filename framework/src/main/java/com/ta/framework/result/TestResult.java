@@ -21,7 +21,7 @@ public class TestResult extends MyResult<String,List<String>> {
 
 	@Override
 	public String toString() {
-		return "TestResult [key=" + key + ", value=" + value + "]";
+		return "TestResult | " + key + " -> " + value ;
 	}	
 
 }

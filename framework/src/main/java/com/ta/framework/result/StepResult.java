@@ -20,7 +20,7 @@ public class StepResult extends MyResult<String, String> {
 	
 	@Override
 	public String toString() {
-		return "StepResult [key=" + key + ", value=" + value + "]";
+		return "StepResult | " + key + " -> " + value ;
 	}
 
 	

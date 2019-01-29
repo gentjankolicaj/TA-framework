@@ -6,7 +6,7 @@ package com.ta.framework.report;
  */
 public enum ReportFileType {
 	
-	XLS("XLS","xls"),XLSX("XLSX","xlsx");
+	XLS("XLS","xls"),XLSX("XLSX","xlsx"),DOCX("DOCX","docx");
 	
 	private String fileType;
 	private String fileExtension;
