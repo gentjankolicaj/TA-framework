@@ -225,7 +225,7 @@ public class ReportUtils {
 		File fileObject = new File(filePath);
 		while (fileObject.exists()) {
 			String fullFileName = fileObject.getName().trim();
-			String name = StringUtils.substring(fullFileName, 0, fullFileName.indexOf("."));
+			String name = StringUtils.substring(fullFileName, 0, fullFileName.lastIndexOf("."));
 			String number = StringUtils.substring(name, name.lastIndexOf("_") + 1, name.length());
 			fileNumber = Integer.valueOf(number) + 1;
 			filePath = buildFilePath(fileName, fileType);

@@ -9,6 +9,7 @@ import com.ta.framework.configuration.GlobalConfigs;
 import com.ta.framework.drivers.DriverUtils;
 import com.ta.framework.exceptions.BrowserException;
 import com.ta.framework.references.BrowserMap;
+import com.ta.framework.references.LogMap;
 
 /**
  * 
@@ -104,12 +105,14 @@ public class BrowserManager {
 	public static void quitBrowsers(List<Browser> list) {
 		for (Browser var : list)
 			var.webDriver.quit();
+
 		DriverUtils.killDriverTasks();
 	}
 
 	public static void quitBrowsers(Browser[] array) {
 		for (Browser var : array)
 			var.webDriver.quit();
+		
 		DriverUtils.killDriverTasks();
 
 	}
@@ -119,7 +122,9 @@ public class BrowserManager {
 		for (Map.Entry<Integer, Browser> entry : map.entrySet()) {
 			entry.getValue().webDriver.quit();
 		}
+		
 		BrowserMap.clearMap();
+		LogMap.clearLogMap();
 		DriverUtils.killDriverTasks();
 
 	}
