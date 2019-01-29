@@ -1,4 +1,4 @@
-Application : https://stackoverflow.com/
+Sample application under test : https://stackoverflow.com/
 
 -In WebApplication package we put TCs and classes specific to application.
 -We use page object modeling(POM) and each page class extends AbstractWebPage
