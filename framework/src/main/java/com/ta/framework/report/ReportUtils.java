@@ -22,6 +22,7 @@ import org.apache.poi.xwpf.usermodel.XWPFTableCell;
 import org.apache.poi.xwpf.usermodel.XWPFTableRow;
 
 import com.ta.framework.configuration.GlobalConfigs;
+import com.ta.framework.references.LogMap;
 import com.ta.framework.result.MyResult;
 
 /**
@@ -232,6 +233,13 @@ public class ReportUtils {
 		}
 		outputStream = new FileOutputStream(filePath);
 
+	}
+	
+	
+	public static void saveLogs(String fileName,String sheetName,ReportFileType fileType) throws Exception{
+		Map logMap=LogMap.getLogMap();
+		saveResultsToExcel(logMap,fileName,sheetName,fileType);
+		
 	}
 
 }
