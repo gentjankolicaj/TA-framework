@@ -4,31 +4,32 @@ package com.ta.framework.exceptions;
  * @author gentjan kolicaj
  *
  */
-public class DriverException extends RuntimeException{
+public class ContentException extends RuntimeException{
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1810519053326616679L;
+	private static final long serialVersionUID = -3866290486345557741L;
 
-	public DriverException() {
+	public ContentException() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public DriverException(String message, Throwable cause) {
+	public ContentException(String message, Throwable cause) {
 		super(message, cause);
 		// TODO Auto-generated constructor stub
 	}
 
-	public DriverException(String message) {
+	public ContentException(String message) {
 		super(message);
 		// TODO Auto-generated constructor stub
 	}
 
-	public DriverException(Throwable cause) {
+	public ContentException(Throwable cause) {
 		super(cause);
 		// TODO Auto-generated constructor stub
 	}
+	
 
 }
