@@ -104,11 +104,13 @@ public class BrowserManager {
 	public static void quitBrowsers(List<Browser> list) {
 		for (Browser var : list)
 			var.webDriver.quit();
+		DriverUtils.killDriverTasks();
 	}
 
 	public static void quitBrowsers(Browser[] array) {
 		for (Browser var : array)
 			var.webDriver.quit();
+		DriverUtils.killDriverTasks();
 
 	}
 
@@ -118,6 +120,7 @@ public class BrowserManager {
 			entry.getValue().webDriver.quit();
 		}
 		BrowserMap.clearMap();
+		DriverUtils.killDriverTasks();
 
 	}
 

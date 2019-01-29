@@ -56,7 +56,6 @@ public abstract class Browser {
 	
 	public void quit() {
 		webDriver.quit();
-		DriverUtils.killDriverTask(browserType);
 	}
 	
 	
